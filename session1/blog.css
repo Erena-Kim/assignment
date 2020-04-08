@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    background-color: rgb(255, 230, 230);
+}
+header {
+    background-image: url(https://lh3.googleusercontent.com/proxy/ZhbvwgzQIYshmbQt4Uehw_rPxvgqkHfJy1nTrlZJp3ZFr9E_Qz6hEoJTBk9u3iUtQDPMTMqfiIZoZvEswlQFpgEeRveLDcJCHxMPGzKHIS5YR5oU8tAqb9WuVPbbzgATXb_gmQ_vpFHgxaqElV9kaeQ9UvPHLDXvLVo6SQYhdhHvAzkh-ECDec-8BZxyLf3ljkAEvG6buh_DUvokYtEVIMDQyYnXc0i68ZudAInE86wJAiAK92mIv0WhqUAewTxoaVsVBJUJTvvpzCCxgiICmHAy16aGP_LYfRDdqkWDvv6muZ7HZTJO-wGUHapD72vHAzXJng);
+    height: 400px;
+    background-position: center center;
+    
+  }
+
+h1 {
+    color: rgb(255, 102, 102);
+    background-color: rgb(255, 255, 255);
+    font-family: 'Covered By Your Grace', sans-serif;
+    font-size: 150px;
+    line-height: 76px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    top: 35%;
+    
+  }
+.header_ {
+    color: rgb(89, 89, 89);
+    background-color: rgb(255, 255, 255);
+    font-family: 'Covered By Your Grace', sans-serif;
+    font-size: 50px;
+    line-height: 76px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    top: 35%;
+}
+.section {
+    color: rgb(89, 89, 89);
+    font-family: 'Covered By Your Grace', 'Nanum Myeongjo', serif;
+    font-size: 50px;
+    text-align: center;
+}
+.intro_ {
+    font-size: 30px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+.flower_bullet {
+    height: 30px;
+    width: 30px;
+}
+.link {
+  box-sizing: border-box;
+  border: white 5px dotted;
+  color: white;
+  position: relative;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;  
+  margin: 0 auto;
+}
+.icon {
+    height: 50px;
+    width: 50px;
+}
+.font_30 {
+    font-size: 30px;
+}
+.font_20 {
+    font-size: 20px;
+}
+.font_15 {
+    font-size: 15px;
+}
+#q3_jam {
+    background-image: url(smile.png);
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+#q3_nojam {
+    background-image: url(nojam.png);
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+}
+#submit {
+    font-family: "Covered By Your Grace";
+    font-color: rgb(89, 89, 89);
+    font-size: 50px;
+    background-color: rgb(64, 128, 0);
+    border: 2px solid rgb(89, 89, 89);
+}
