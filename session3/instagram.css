@@ -64,7 +64,7 @@
     margin-top: 30px;
     margin-bottom: 5px;
     /* padding: 20px; */
-    width: 70%;
+    width: 60%;
     height: 220px;
     display: flex;
     justify-content: flex-start;
@@ -115,7 +115,7 @@
 }
 /* body_2 styling */
 .body_2 {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -136,10 +136,17 @@
 }
 /* body_3 styling */
 .body_3 {
-    width: 70%;
+    width: 60%;
     display: flex;
     margin: 20px auto;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pic {
+    width: 293px;
+    height: 293px;
+    padding: 10px 10px;
 }
 .foot {
     width: 90%;
