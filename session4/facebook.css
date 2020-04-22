@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: gainsboro;
+}
+/* top styling */
+.top {
+    padding: 10px 0;
+    background-color: white;
+    /* background-color: red; */
+}
+.top_upper_element {
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: gold; */
+}
+.top_upper_element_left {
+    width: 50%;
+    /* background-color: aqua; */
+}
+.top_upper_element_right {
+    border-radius: 100%;
+    padding: 5px;
+    margin: 1px 3px;
+    background-color: gainsboro
+}
+.top_under_element {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: green; */
+}
+.top_under_element_container {
+    width: 30%;
+    margin: 2px 5px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: linear-gradient( to bottom, rgb(242, 242, 242),rgb(64, 64, 64));
+}
+.top_under_element_container img {
+    width: 100%;
+}
+.top_under_element_container span {
+    /* position: relative; */
+    border: 2px solid rgb(0, 51, 153);
+    border-radius: 100%;
+    /* top: 35px; */
+    color: rgb(242, 242, 242);
+    font-size: 2em;
+    /* background-color: gray; */
+}
+.top_under_element_container_first span {
+    border: none;
+    color: rgb(0, 51, 153)
+}
+.top_under_element_container div {
+    font-weight: 700;
+    margin-left: 3px;
+    color: rgb(242, 242, 242);
+}
+/* color: rgb(0, 51, 204); */
+/* middle styling */
+.middle {
+    background-color: white;
+    margin: 10px 0;
+}
+.middle_upper_element {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: hotpink; */
+}
+.middle_upper_element img{
+    width: 13%;
+    margin: 5px;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+
+
+.middle_under_element {
+    padding: 7px 0;
+    border-top: 1px dotted gainsboro;
+    display: flex;
+    justify-content: space-around;
+}
+.middle_under_element_container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    /* background-color: goldenrod; */
+}
+.middle_under_element_container span {
+    padding: 0 5px;
+}
+/* color */
+.pink {
+    color: #d70f4b;
+}
+.green {
+    color: yellowgreen;
+}
+.red {
+    color: #e60000;
+}
+/* border */
+.right_border {
+    border-right: 1px dotted gainsboro;
+}
+/* bottom styling */
+.bottom {
+    background-color: white;
+}
+.bottom_upper {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom_upper img {
+    width: 13%;
+    border-radius: 100%;
+    margin: 5px;
+    margin-right: 10px;
+}
+.bottom_upper_middle {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: indianred; */
+}
+.bottom_upper_middle_under {
+    padding: 3px 0;
+    display: flex;
+}
+
+
+.bottom_middle {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    /* background-color: green; */
+}
+.bottom_middle_text {
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+/* color */
+.grey {
+    color: rgb(166, 166, 166);
+}
+
+.bottom_under {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+.bottom_under_left {
+    width: 65%;
+}
+.bottom_under_right {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bottom_under_left img {
+    width: 100%;
+    height: 100%;
+}
+.bottom_under_right img {
+    width: 100%;
+    height: 32%;
+}
+
+
+.bottom_last {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: teal; */
+}
+.bottom_last_left {
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: orange; */
+}
+.bottom_last_left span {
+    color: white;
+    border-radius: 100%;
+    border: 2px solid white;
+    padding: 3px;
+    font-size: 0.8em;
+}
+.front {
+    position: relative;
+    left: 5px;
+    z-index: 20;
+}
+.bottom_last_right {
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: turquoise; */
+}
+.bottom_last_right img {
+    width: 8%;
+    border-radius: 100%;
+    margin: 5px;
+}
+.bottom_last_right span {
+    font-size: 0.9em;
+}
+/* color */
+.blue {
+    background-color: rgb(0, 51, 153);
+}
+.pink_2 {
+    background-color: #d70f4b;
+}
+
+
+.bottom_final {
+    border-top: 1px dotted gainsboro;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.bottom_final_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(102, 102, 102);
+}
+.bottom_final_element span {
+    margin: 5px;
+}
+/* nav styling */
+.nav {
+    background-color: white;
+    margin: 10px 0;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: honeydew; */
+}
+.nav span {
+    padding: 10px 10px;
+    font-size: 2em;
+    /* background-color: lavender; */
+}
+.now {
+    border-top: 2px solid rgb(0, 51, 153);
+    color: rgb(0, 51, 153)
+}
