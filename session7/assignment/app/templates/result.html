@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'result.css' %}" type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <span>글자 수 변환</span>
+        <span class="material-icons icon">spellcheck</span>
+    </div>
+    <div class="content">
+        입력하신 텍스트 : {{text}}
+    </div>
+    <div class="info">
+        <div class="info_content">
+            <span class="material-icons small_icon">
+                check_circle_outline
+            </span>
+            공백 포함 글자수 : {{total_len}}
+        </div>
+        <div class="info_content">
+            <span class="material-icons small_icon">
+                check_circle_outline
+            </span>
+            공백 제외 글자수 : {{len_without_blank}}
+        </div>
+        <div class="info_content">
+            <span class="material-icons small_icon">
+                check_circle_outline
+            </span>
+            단어 개수 : {{word}}
+        </div>
+    </div>
+</body>
+</html>

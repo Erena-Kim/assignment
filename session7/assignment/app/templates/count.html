@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'count.css' %}" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <span>글자 수 변환</span>
+        <span class="material-icons icon">spellcheck</span>
+    </div>
+    <form action="{% url 'result' %}" method="POST"> {% csrf_token %}
+        <div class="textarea">
+            <textarea name="text" cols="60" rows="15" placeholder="글자를 입력하세요" required></textarea>
+        </div>
+        <br>
+        <input type="submit" value="입력">
+    </form>
+</body>
+</html>
