@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'movie_in_html' %}">영화</a>
+    <p>글 개수 : {{articles_movie_count}}</p>
+    <br>
+    <a href="{% url 'drama_in_html' %}">드라마</a>
+    <p>글 개수 : {{articles_drama_count}}</p>
+    <br>
+    <a href="{% url 'entertain_in_html' %}">엔터테인먼트</a>
+    <p>글 개수 : {{articles_entertain_count}}</p>
+    <br>
+    <a href="{% url 'new_in_html' %}">글쓰러가기</a>
+</body>
+</html>
