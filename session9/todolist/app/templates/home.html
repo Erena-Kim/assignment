@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}" >
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <!-- 제목(마감기한이 적은수) -->
+    <h1 class='title'>
+        To do list
+    </h1>
+    <div class='container'>
+        {% for post in posts %}
+        <div class='post'>
+            <span class="material-icons">
+                alarm_on
+            </span>
+            {{ post.title }}
+            <a href="{% url 'detail' post.pk %}">Click!</a>
+        </div>
+        {% endfor %}
+    
+        <div class='add_list'>
+            <a href="{% url 'new' %}">
+                <span>
+                    
+                할 일 추가하기
+                </span>
+                <span class="material-icons">
+                    double_arrow
+                </span>   
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

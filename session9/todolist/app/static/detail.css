@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    box-sizing: border-box;
+}
+.title {
+    margin: 10px 10px;
+    padding: 5px 10px;
+}
+
+.text {
+    background-color: gold;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    width: 30%;
+}
+.big {
+    font-size: 18px;
+}
+.small {
+    font-size: 10px;
+}
+.link {
+    margin: 10px 15px;
+}
+.link a {
+    color: black;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'edit.css' %}" >
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="one">
+            <label for="title" class="label">제목</label>
+            <input type="text" name="title" id="title" value="{{ post.title }}">
+        </div>
+        <div class="one">
+            <label for="content" class="label">내용</label>
+            <input type="text" name="content" id="content" value="{{ post.content }}">
+        </div>
+        <div class="one">
+            <label for="duedate" class="label">마감기한</label>
+            <input type="date" name="duedate" id="duedate" value="{{ post.duedate }}" min="2020-01-01" max="2020-12-31"> 
+        </div>
+        <button class="one" type="submit">수정하기</button>
+    </form>
+</body>
+</html>

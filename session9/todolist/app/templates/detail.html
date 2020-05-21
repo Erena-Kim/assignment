@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}" >
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- 제목 세부사항 마감기한 -->
+    <h2 class='title'>
+        내용 확인하기
+    </h2>
+    <div class="text big">
+        {{ post.title }}
+    </div> 
+    <div class="text">
+        {{ post.content }}
+    </div>
+    <div class="text small">
+        {{ post.duedate }}
+    </div>
+
+    <div class="link">
+        <a href="{% url 'home' %}">홈으로</a>
+    </div>
+    <div class="link">
+        <a href="{% url 'edit' post.pk %}">수정하기</a>
+    </div>
+    <div class="link">
+        <a href="{% url 'delete' post.pk %}">삭제하기</a>
+    </div>
+</body>
+</html>
