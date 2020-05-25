@@ -4,23 +4,18 @@
     box-sizing: border-box;
 }
 .container {
-    display:flex;
+    display: flex;
     /* width: 20%; */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.title {
-    margin: 10px 10px;
-    padding: 5px 10px;
-}
 .post {
     background-color: gold;
-    width: 13%;
+    /* width: 25%; */
     margin: 10px 10px;
     padding: 5px 10px;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -42,4 +37,8 @@
     text-decoration: none;
     text-align: center;
     margin-right: 10px;
+}
+
+.small {
+    font-size: 10px;
 }

@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    {% load static %}
+{% extends 'base.html' %}
+
+{% block css %}
+    {% load static %}   
     <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}" >
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
+{% endblock %}
+
+{% block content %}
 <body>
     <!-- 제목 세부사항 마감기한 -->
     <h2 class='title'>
@@ -33,5 +30,16 @@
     <div class="link">
         <a href="{% url 'delete' post.pk %}">삭제하기</a>
     </div>
+
+    {% for comment in post.comments.all %}
+    <li class="link">{{ comment.content }} <a class="small" href="{% url 'delete_comment' post.pk comment.pk %}">댓글 삭제하기</a></li>
+    
+    {% endfor %}
+
+    <form method="POST" class="link">
+        {% csrf_token %}
+        <input type="text" name="content" placeholder="댓글을 입력해주세요">
+        <button type="submit">댓글 쓰기</button>
+    </form>
 </body>
-</html>
+{% endblock %}
