@@ -16,6 +16,7 @@
             </span>
             {{ post.title }}
             <p>{{post.duedate|timeuntil}} 남았습니다</p>
+            <p>{{post.user}}</p>
             <a href="{% url 'detail' post.pk %}">Click!</a>
         </div>
         {% endfor %}

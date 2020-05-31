@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block css %}
+    {% load static %}   
+    <link rel="stylesheet" type="text/css" href="{% static 'mypage.css' %}" >
+{% endblock %}
+
+{% block content %}
+<body>
+    <h3 class="text green">{{ user.username }}님이 쓰신 글입니다.</h3>
+    {% for post in posts %}
+        <div class='post'>
+            <span class="material-icons">
+                alarm_on
+            </span>
+            <p class="text"> 
+                {{ post.title }}
+            </p>
+            <p class="text">
+                {{ post.content }}
+            </p>
+            <p class="text">
+                {{ post.duedate }}
+            </p>
+        </div>
+        {% endfor %}
+   
+    <div class="link">
+        <a href="{% url 'home' %}">홈으로</a>
+    </div>
+</body>
+{% endblock %}
